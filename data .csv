@@ -1,0 +1,11 @@
+EmployeeID,Name,Age,Gender,Department,Experience,Salary,Education,Performance
+E001,Ali Khan,25,Male,IT,2,45000,Bachelor,Good
+E002,Sara Ahmed,28,Female,HR,4,55000,Master,Excellent
+E003,Ahmed Raza,30,Male,Finance,6,70000,Bachelor,Excellent
+E004,Ayesha Noor,24,Female,Marketing,2,42000,Bachelor,Average
+E005,Hamza Ali,1,Male,IT,10,95000,Master,Excellent
+E006,Zain Malik,27,Male,Sales,3,50000,Bachelor,Good
+E007,Hina Tariq,31,Female,Finance,7,78000,Master,Excellent
+E008,Usman Khan,29,Male,HR,5,60000,Bachelor,Good
+E009,Noor Fatima,26,Female,Marketing,3,48000,Bachelor,Average
+E010,Bilal Ahmed,40,Male,IT,15,120000,Master,Excellent
