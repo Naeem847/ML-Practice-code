@@ -43,3 +43,6 @@ print("\n print model coefficients and intercept:")
 print(f"intercept: {model.intercept_}")
 print(f"Slope: {model.coef_[0]}")
 
+
+
+
