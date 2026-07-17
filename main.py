@@ -81,3 +81,9 @@ df=pd.get_dummies(df, drop_first=True)
 # display update data frame
 
 print(df.head())
+
+# # define featured x and target y
+# X=df[['Age']]
+# Y=df['Salary']
+
+
