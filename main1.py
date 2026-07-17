@@ -44,5 +44,8 @@ print(f"intercept: {model.intercept_}")
 print(f"Slope: {model.coef_[0]}")
 
 
+current_palette1=sns.color_palette()
+sns.palplot(sns.color_palette("colorblind"))
 
-
+plt.show()
+print(plt.show())
