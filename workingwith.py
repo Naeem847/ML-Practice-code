@@ -19,3 +19,4 @@ print(df)
 import pandas as pd
 df=pd.read_csv('myenv/sample_submission.tsv',sep='\t')
 print(df)
+
