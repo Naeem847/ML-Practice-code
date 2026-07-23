@@ -1,0 +1,23 @@
+MatchID,Season,Date,Venue,Team1,Team2,TossWinner,TossDecision,Winner,WinBy,PlayerOfMatch
+PSL001,2016,2016-02-04,Dubai,Islamabad United,Quetta Gladiators,Islamabad United,Bat,Islamabad United,6 Wickets,Andre Russell
+PSL002,2016,2016-02-07,Sharjah,Lahore Qalandars,Karachi Kings,Karachi Kings,Field,Karachi Kings,7 Wickets,Ravi Bopara
+PSL003,2017,2017-02-10,Dubai,Peshawar Zalmi,Quetta Gladiators,Peshawar Zalmi,Bat,Peshawar Zalmi,58 Runs,Kamran Akmal
+PSL004,2017,2017-02-15,Sharjah,Islamabad United,Karachi Kings,Karachi Kings,Field,Islamabad United,12 Runs,Brad Haddin
+PSL005,2018,2018-02-23,Dubai,Islamabad United,Peshawar Zalmi,Islamabad United,Field,Islamabad United,3 Wickets,Luke Ronchi
+PSL006,2018,2018-03-02,Lahore,Karachi Kings,Lahore Qalandars,Karachi Kings,Bat,Karachi Kings,5 Runs,Babar Azam
+PSL007,2019,2019-02-15,Karachi,Quetta Gladiators,Peshawar Zalmi,Quetta Gladiators,Field,Quetta Gladiators,8 Wickets,Shane Watson
+PSL008,2019,2019-03-05,Lahore,Islamabad United,Karachi Kings,Islamabad United,Bat,Islamabad United,22 Runs,Asif Ali
+PSL009,2020,2020-02-21,Karachi,Karachi Kings,Lahore Qalandars,Karachi Kings,Field,Karachi Kings,5 Wickets,Babar Azam
+PSL010,2020,2020-03-01,Lahore,Multan Sultans,Peshawar Zalmi,Multan Sultans,Bat,Multan Sultans,30 Runs,Shan Masood
+PSL011,2021,2021-06-09,Abu Dhabi,Multan Sultans,Peshawar Zalmi,Multan Sultans,Bat,Multan Sultans,47 Runs,Sohaib Maqsood
+PSL012,2021,2021-06-12,Abu Dhabi,Karachi Kings,Islamabad United,Islamabad United,Field,Islamabad United,5 Wickets,Usman Khawaja
+PSL013,2022,2022-01-30,Lahore,Lahore Qalandars,Multan Sultans,Lahore Qalandars,Bat,Lahore Qalandars,42 Runs,Shaheen Afridi
+PSL014,2022,2022-02-08,Karachi,Peshawar Zalmi,Quetta Gladiators,Quetta Gladiators,Field,Quetta Gladiators,6 Wickets,Jason Roy
+PSL015,2023,2023-02-13,Lahore,Lahore Qalandars,Multan Sultans,Lahore Qalandars,Bat,Lahore Qalandars,1 Run,Fakhar Zaman
+PSL016,2023,2023-02-20,Rawalpindi,Islamabad United,Karachi Kings,Islamabad United,Field,Islamabad United,4 Wickets,Azam Khan
+PSL017,2024,2024-02-18,Karachi,Islamabad United,Multan Sultans,Islamabad United,Field,Islamabad United,2 Wickets,Imad Wasim
+PSL018,2024,2024-03-01,Lahore,Lahore Qalandars,Peshawar Zalmi,Peshawar Zalmi,Field,Lahore Qalandars,18 Runs,Rassie van der Dussen
+PSL019,2025,2025-04-15,Lahore,Lahore Qalandars,Quetta Gladiators,Lahore Qalandars,Field,Lahore Qalandars,6 Wickets,Kusal Perera
+PSL020,2025,2025-04-25,Rawalpindi,Islamabad United,Karachi Kings,Islamabad United,Bat,Islamabad United,10 Runs,Shadab Khan
+PSL021,2026,2026-04-12,Lahore,Peshawar Zalmi,Lahore Qalandars,Peshawar Zalmi,Field,Peshawar Zalmi,5 Wickets,Babar Azam
+PSL022,2026,2026-04-20,Karachi,Quetta Gladiators,Multan Sultans,Multan Sultans,Bat,Multan Sultans,4 Runs,Mohammad Rizwan
