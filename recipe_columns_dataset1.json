@@ -1,0 +1,882 @@
+[
+  {
+    "id": 1,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 2,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 3,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 4,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 5,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 6,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 7,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 8,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 9,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 10,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 11,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 12,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 13,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 14,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 15,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 16,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 17,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 18,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 19,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 20,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 21,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 22,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 23,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 24,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 25,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 26,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 27,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 28,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 29,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 30,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 31,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 32,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 33,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 34,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 35,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 36,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 37,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 38,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 39,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 40,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 41,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 42,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 43,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 44,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 45,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 46,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 47,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 48,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 49,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 50,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 51,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 52,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 53,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 54,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 55,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 56,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 57,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 58,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 59,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 60,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 61,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 62,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 63,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 64,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 65,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 66,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 67,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 68,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 69,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 70,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 71,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 72,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  },
+  {
+    "id": 73,
+    "cuisine": "Pakistani",
+    "ingredients": [
+      "Chicken",
+      "Onion",
+      "Tomato",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 74,
+    "cuisine": "Indian",
+    "ingredients": [
+      "Beef",
+      "Ginger",
+      "Garlic",
+      "Oil",
+      "Spices"
+    ]
+  },
+  {
+    "id": 75,
+    "cuisine": "Italian",
+    "ingredients": [
+      "Rice",
+      "Peas",
+      "Carrot",
+      "Soy Sauce",
+      "Salt"
+    ]
+  },
+  {
+    "id": 76,
+    "cuisine": "Chinese",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic",
+      "Butter"
+    ]
+  },
+  {
+    "id": 77,
+    "cuisine": "Mexican",
+    "ingredients": [
+      "Beans",
+      "Tortilla",
+      "Cheese",
+      "Tomato",
+      "Onion"
+    ]
+  },
+  {
+    "id": 78,
+    "cuisine": "Thai",
+    "ingredients": [
+      "Noodles",
+      "Soy Sauce",
+      "Chicken",
+      "Carrot",
+      "Cabbage"
+    ]
+  },
+  {
+    "id": 79,
+    "cuisine": "Japanese",
+    "ingredients": [
+      "Paneer",
+      "Spinach",
+      "Cream",
+      "Garlic",
+      "Salt"
+    ]
+  },
+  {
+    "id": 80,
+    "cuisine": "American",
+    "ingredients": [
+      "Fish",
+      "Lemon",
+      "Pepper",
+      "Oil",
+      "Herbs"
+    ]
+  }
+]
