@@ -59,3 +59,41 @@ print(f"a and b: {a and b}")
 print(f"a or b: {a or b}")
 print(f"not a: {not a}")
 
+# type conversion(casting)
+# python allow you convert one data to another data type
+int_value=10
+float_value=2.3435
+str_val="123"
+bool_val=True
+int_from_str=int(str_val)
+converted_float=float(int_value)
+print(f"converted_float: {converted_float}, type: {type(converted_float)}")
+converted_str=str(float_value)
+print(f"converted_str: {converted_str}, type: {type(converted_str)}")
+converted_bool=bool(int_value)
+print(f"converted_bool: {converted_bool}, type: {type(converted_bool)}")
+# list changeble data type
+my_list=[1,2,3,"apple","banana",True,3.14]
+print(f"my_list: {my_list}, type: {type(my_list)}")
+print(f"first element of my_list: {my_list[0]}")
+# list are changeble muatable
+my_list.append("cherry")
+print(f"my_list after append: {my_list}")
+my_list.remove("banana")
+print(f"my_list after removing 'banana': {my_list}")
+my_list[1]=20
+print(f"my_list after changing second element: {my_list}")
+# tuple immutable data type
+my_tuple=(1,2,3,"apple","banana",True,3.14)
+print(f"my_tuple: {my_tuple}, type: {type(my_tuple)}")
+# Dictionary key-value pairs
+my_dict={"name":"John","age":30,"city":"New York"}
+print(f"my_dict: {my_dict}, type: {type(my_dict)}")
+print(f"name from my_dict: {my_dict['name']}")
+print(f"age from my_dict: {my_dict['age']}")
+print(f"city from my_dict: {my_dict['city']}")
+# dictionary are changeble mutable
+my_dict["age"]=31
+print(f"my_dict after changing age: {my_dict}")
+my_dict["country"]="USA"
+print(f"my_dict after adding country: {my_dict}")
