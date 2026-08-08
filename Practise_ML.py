@@ -97,3 +97,71 @@ my_dict["age"]=31
 print(f"my_dict after changing age: {my_dict}")
 my_dict["country"]="USA"
 print(f"my_dict after adding country: {my_dict}")
+# the range function()
+for i in range(5):
+    print(i)
+
+for i in range(2,8):
+    print(i)
+    
+for i in range(0,5,11):
+    print(i)
+    
+for number in range(5):
+    if number==3:
+        pass
+    print(f"number: {number}")
+# using the break statement in loop
+for number in range(5):
+    if number==3:
+        break
+    print(f"number: {number}")
+
+else:
+    print("Loop completed without break")
+
+    # loop inside the another loop
+    # outer loop control rows and inner loop control columns
+for rows in range(3):
+    for columns in range(2):
+        print(f"rows: {rows}, columns: {columns}")
+# built in punctuation module
+text="Hello, World! This is a test string."
+print(f"Original text: {text}")
+print(f"Length of text: {len(text)}")
+
+# functions greeting
+def greeting():
+    print(f"hello my name is Muhammad Naeem!")
+# calling the function
+greeting()
+# calculation the area
+def calculate_area(length,width):
+    area=length*width
+    print("length:",length)
+    print("width:",width)
+    print("area:",area)
+
+calculate_area(5,10)
+# local scope variables:
+def roll_no():
+    roll_number=12345
+    print(f"roll_number inside function: {roll_number}")
+
+roll_no()
+# global scope variable we access outside the function or anywhere in the program we can access
+global_roll_number=67890
+
+def display_roll_number():
+    print(f"global_roll_number inside function: {global_roll_number}")
+
+display_roll_number()
+print(f"global_roll_number outside function: {global_roll_number}")
+# function in parameters
+def desplay_result(name,marks):
+    print(f"Name: {name}, Marks: {marks}")
+    if marks>=50:
+        print("results is pass")
+    else:
+        print("results is fail")
+desplay_result("Ali",75)        
