@@ -164,4 +164,6 @@ def desplay_result(name,marks):
         print("results is pass")
     else:
         print("results is fail")
-desplay_result("Ali",75)        
+desplay_result("Ali",75)     
+
+
