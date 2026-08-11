@@ -166,4 +166,28 @@ def desplay_result(name,marks):
         print("results is fail")
 desplay_result("Ali",75)     
 
+# working on numpy
+import numpy as np
+arr=np.array([1,2,3,4])
+print(arr)
+# zeros in numpy
+arr=np.zeros((2,3))
+print(arr)
+# np .empty
+arr=np.empty((2,2))
+print(arr)
+# arrange functions
+arr=np.arange(0,10,2)
+print(arr)
+# linespace functions
+arr=np.linspace(0,1,5)
+print(arr)
+# check the arrays dimensions
+arr=np.array([[1,2,3],[3,4,5]])
+print("2 ndim",arr.ndim)
+print("2 ndim",arr.size)
+print("2 ndim",arr.dtype)
 
+# flatten() function
+arr=np.array([[1,2,3],[3,4,5]])
+print(arr.flatten())
