@@ -1,0 +1,11 @@
+name,age,marks,department,semester,city,email
+Naeem,25,85,Computer Science,7,Islamabad,naeem@example.com
+Ali,22,78,Software Engineering,6,Rawalpindi,ali@example.com
+Sara,23,92,Information Technology,7,Lahore,sara@example.com
+Ahmed,24,74,Computer Science,8,Karachi,ahmed@example.com
+Ayesha,21,88,Data Science,5,Islamabad,ayesha@example.com
+Hassan,23,81,Artificial Intelligence,6,Rawalpindi,hassan@example.com
+Fatima,22,95,Computer Science,7,Lahore,fatima@example.com
+Usman,24,69,Software Engineering,8,Karachi,usman@example.com
+Zainab,21,90,Data Science,5,Islamabad,zainab@example.com
+Hamza,23,76,Information Technology,6,Peshawar,hamza@example.com

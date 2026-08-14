@@ -120,7 +120,7 @@ for number in range(5):
 else:
     print("Loop completed without break")
 
-    # loop inside the another loop
+    # loop inside th e another loop
     # outer loop control rows and inner loop control columns
 for rows in range(3):
     for columns in range(2):
@@ -191,3 +191,38 @@ print("2 ndim",arr.dtype)
 # flatten() function
 arr=np.array([[1,2,3],[3,4,5]])
 print(arr.flatten())
+# worknig with pandas
+import pandas as pd
+marks=pd.Series([80,90,70,85],index=['Ali','Ahmed','Sara','Zara'])
+print(marks)
+print("ali",marks['Ali'])
+print("Ahmed",marks.iloc[1])
+print(marks.values)
+print(marks.index)
+# worknig with data json data set
+import pandas as pd
+import numpy as np
+data={
+  "name": ["Naeem","Ali","Ahmed"],
+  "age": [25, 30, 35],
+  "marks": [85, 90, 75],
+  "department": ["Computer Science", "Mathematics", "Physics"]
+}
+df=pd.DataFrame(data)
+print(df)  
+# add some more key and values in this json file?
+df=pd.read_csv("student.csv")
+# print(df.head(n=3))
+# print(df.tail(n=2))
+# print(df.sample(3,random_state=1))
+# print(df.shape)
+# print(df.columns)
+# print(df.dtypes)
+# print(df.info())
+# print(df.describe())
+# selecting a single column
+ages=df['age']
+print(ages)
+# selecting a multiple columns
+subsets=df[['name','marks']]
+print(subsets)
