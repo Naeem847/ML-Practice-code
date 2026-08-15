@@ -14,7 +14,7 @@ print(f"a-b={a-b}")
 print(f"a*b={a*b}")
 print(f"a/b={a/b}")
 
-# intiger datatypes
+# # intiger datatypes
 integer_variable=10
 negative_integer_variable=-5
 large_integer_variable=1000000000
@@ -29,7 +29,7 @@ print(f"float_variable: {float_variable}, type: {type(float_variable)}")
 print(f"negative_float_variable: {negative_float_variable}, type: {type(negative_float_variable)}")
 print(f"scientific_variable: {scientific_variable}, type: {type(scientific_variable)}")
 # Strings (str)
-# string is a sequence of characters enclosed in single or double quotes
+# # string is a sequence of characters enclosed in single or double quotes
 string_variable="Hello, World!"
 string_variable2='Python is fun!'
 multiple_line_string="""This is a multi-line string.
@@ -120,8 +120,8 @@ for number in range(5):
 else:
     print("Loop completed without break")
 
-    # loop inside th e another loop
-    # outer loop control rows and inner loop control columns
+#     # loop inside th e another loop
+#     # outer loop control rows and inner loop control columns
 for rows in range(3):
     for columns in range(2):
         print(f"rows: {rows}, columns: {columns}")
@@ -166,7 +166,7 @@ def desplay_result(name,marks):
         print("results is fail")
 desplay_result("Ali",75)     
 
-# working on numpy
+# # working on numpy
 import numpy as np
 arr=np.array([1,2,3,4])
 print(arr)
@@ -210,19 +210,83 @@ data={
 }
 df=pd.DataFrame(data)
 print(df)  
-# add some more key and values in this json file?
+# # add some more key and values in this json file?
 df=pd.read_csv("student.csv")
-# print(df.head(n=3))
-# print(df.tail(n=2))
-# print(df.sample(3,random_state=1))
-# print(df.shape)
-# print(df.columns)
-# print(df.dtypes)
-# print(df.info())
-# print(df.describe())
+print(df.head(n=3))
+print(df.tail(n=2))
+print(df.sample(3,random_state=1))
+print(df.shape)
+print(df.columns)
+print(df.dtypes)
+print(df.info())
+print(df.describe())
 # selecting a single column
 ages=df['age']
 print(ages)
 # selecting a multiple columns
 subsets=df[['name','marks']]
 print(subsets)
+# selecting rows by index
+import matplotlib.pyplot as plt
+x = ['A', 'B', 'AB','A+', 'B+']
+# x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+plt.plot(x, y)
+print("Line graph plotted successfully!")
+print(plt.plot(x, y))
+print(plt.show())
+plt.scatter(x, y)
+print("Line graph plotted successfully!")
+print(plt.scatter(x, y))
+print(plt.show())
+plt.bar(x, y)
+plt.title("blood groups vs men count")
+plt.grid(True)
+plt.xlabel("blood groups")
+plt.ylabel("men count")
+plt.legend(["blood groups"])
+print("Line graph plotted successfully!")
+print(plt.bar(x, y))
+print(plt.show())
+# # from matplotlip.line import Linestyle
+nx=np.linspace(0, 10*np.pi, 1000)
+ny=np.sin(nx)
+fig, ax=plt.subplots(figsize=(10, 3))
+ax.plot(nx, ny, color="C1")
+print(plt.show())
+# plt.plot(nx, ny, linestyle=Linestyle.DASHDOT)
+import matplotlib.pyplot as plt
+import numpy as np
+x=["A","B","AB","A+","B+"]
+y=[2,4,6,8,10]
+plt.bar(x,y)
+plt.title("blood groups vs men count")
+plt.grid()
+plt.xlabel("blood groups")
+plt.ylabel("men count")
+plt.legend(["blood groups"])
+print(plt.show())
+nx=np.linspace(0,10*np.pi,1000)
+x=np.cos(nx)
+ny=np.sin(nx)
+# data for pie plot
+pie_data=[30,20,15,10]
+pie_labels=["Category1","Category2","Category3","Category4"]
+fig,((plot1,plot2),(plot3,plot4))=plt.subplots(2,2,figsize=(10,5))
+
+plot1.plot(nx,ny,color="C1")
+
+plot2.pie(pie_data,labels=pie_labels,autopct="%1.1f%%",startangle=90)
+plot3.hist(ny)
+plot4.barh(pie_labels,pie_data)
+print(plt.show())
+# exploring the data preprocessing and visualization
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+df=pd.read_csv("california_housing.csv")
+print(df.describe())
+print
