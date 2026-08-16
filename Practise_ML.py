@@ -179,7 +179,7 @@ print(arr)
 # arrange functions
 arr=np.arange(0,10,2)
 print(arr)
-# linespace functions
+# # linespace functions
 arr=np.linspace(0,1,5)
 print(arr)
 # check the arrays dimensions
@@ -281,12 +281,44 @@ plot2.pie(pie_data,labels=pie_labels,autopct="%1.1f%%",startangle=90)
 plot3.hist(ny)
 plot4.barh(pie_labels,pie_data)
 print(plt.show())
-# exploring the data preprocessing and visualization
+# # exploring the data preprocessing and visualization
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
 
-df=pd.read_csv("california_housing.csv")
-print(df.describe())
-print
+df=pd.read_csv("heart_desease_ML.csv")
+print(df.head())
+target_values = [
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 
+    # continue until you have one value for every row
+]
+
+df["target"] = target_values
+print(len(df))
+print(len(target_values))
+
+df.to_csv("heart_desease_ML.csv", index=False)
+
+print(df.head())
+print(df.notnull())
+print(df.drop_duplicates())
+print(df.info())
+print(df.fillna())
+print(df['target'].unique())
+df['age']=df['age'].fillna(df['age'].mean())
