@@ -297,15 +297,15 @@ target_values = [
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
         1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-        1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1, 1, 1, 1, 1, 1,1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-            1, 1, 1, 
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+0,0,0,0
     # continue until you have one value for every row
 ]
 
@@ -319,6 +319,35 @@ print(df.head())
 print(df.notnull())
 print(df.drop_duplicates())
 print(df.info())
-print(df.fillna())
+# print(df.fillna())
 print(df['target'].unique())
-df['age']=df['age'].fillna(df['age'].mean())
+df['target'].value_counts().plot(kind="bar",color=["blue","green"]);
+plt.xlabel("Target")
+plt.ylabel("Number of Patients")
+plt.title("Heart Disease Target Distribution")
+print(plt.show())
+# checking for any missing value
+df.isna().sum()
+print(df.isna().sum())
+# gender vs target
+print(pd.crosstab(df.target,df.gender.map({0:"female-0",1:"male-1"})))
+pd.crosstab(df.target,df.gender).plot(kind='bar')
+# print(pd.crosstab(df.target,df.gender.map({0:"female-0",1:"male-1"}))).plot(kind='bar')
+plt.xlabel("0=No Disease,1=Disease")
+plt.ylabel("Count")
+plt.legend(['Females','Males'])
+print(plt.show())
+# finding the others patterns
+plt.figure(figsize=(10,5))
+# take a look at the age VS thalach in a seatter plot
+plt.scatter(df.age[df.target==0],df.maximumHeartrate[df.target==0],c="green");
+plt.scatter(df.age[df.target==1],df.maximumHeartrate[df.target==1],c="red");
+df.age.plot.hist()
+plt.title("Age VS Heart Rate")
+plt.xlabel("Age")
+plt.ylabel("Heart Rate")
+plt.legend(['No Desease','Desease'])
+print(plt.show())
+# check the age distribution
+df.age.plot.hist()
+print(df.show())
