@@ -351,3 +351,4 @@ print(plt.show())
 # check the age distribution
 df.age.plot.hist()
 print(df.show())
+print("hello world")
