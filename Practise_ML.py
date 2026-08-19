@@ -352,3 +352,23 @@ print(plt.show())
 df.age.plot.hist()
 print(df.show())
 print("hello world")
+import numpy as np
+part=30
+total=120
+pct=(part/total) * 100
+print(f"Percentage: {pct}%")
+# A shop has 149 items and sold 44.so what percentege sold
+total_item=149
+sold=44
+t_percentage=(sold/total_item)*100
+print(t_percentage)
+
+# To simplify the ratio 20:12 to its lowest form
+import math
+
+a = 20
+b = 12
+
+gcd = math.gcd(a, b)
+
+print(f"Simplified ratio: {a // gcd}:{b // gcd}")
