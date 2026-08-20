@@ -372,3 +372,5 @@ b = 12
 gcd = math.gcd(a, b)
 
 print(f"Simplified ratio: {a // gcd}:{b // gcd}")
+
+print(f"Simplified ratio: {a // gcd}:{b // gcd}")
