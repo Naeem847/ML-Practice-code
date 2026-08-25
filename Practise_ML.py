@@ -374,3 +374,11 @@ gcd = math.gcd(a, b)
 print(f"Simplified ratio: {a // gcd}:{b // gcd}")
 
 print(f"Simplified ratio: {a // gcd}:{b // gcd}")
+
+# working on numpy
+from math import gcd
+sold,total=20,100
+d=gcd(sold,total)
+print("GCD",d)
+frac=(sold/d)/(total//d)
+print(frac)
