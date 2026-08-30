@@ -383,3 +383,25 @@ print("GCD",d)
 frac=(sold/d)/(total//d)
 print(frac)
 
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+
+calc = Calculator()
+
+print("Addition:", calc.add(10, 5))
+print("Subtraction:", calc.subtract(10, 5))
+
+# For the data 4, 8, 6, 10, let's calculate the population standard deviation.
+import numpy as np
+
+data = [4, 8, 6, 10]
+
+std = np.std(data)
+
+print("Population Standard Deviation:", round(std, 2))
+
