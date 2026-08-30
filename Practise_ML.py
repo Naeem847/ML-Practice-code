@@ -382,3 +382,4 @@ d=gcd(sold,total)
 print("GCD",d)
 frac=(sold/d)/(total//d)
 print(frac)
+
