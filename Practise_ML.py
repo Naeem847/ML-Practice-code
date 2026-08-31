@@ -396,12 +396,30 @@ calc = Calculator()
 print("Addition:", calc.add(10, 5))
 print("Subtraction:", calc.subtract(10, 5))
 
-# For the data 4, 8, 6, 10, let's calculate the population standard deviation.
+For the data 4, 8, 6, 10, let's calculate the population standard deviation.
 import numpy as np
 
 data = [4, 8, 6, 10]
 
 std = np.std(data)
 
-print("Population Standard Deviation:", round(std, 2))
+# print("Population Standard Deviation:", round(std, 2))
+
+import matplotlib.pyplot as plt
+categories=["Apple","Banana","Orange"]
+value=[10,15,8]
+plt.bar(categories,value)
+plt.xlabel("fruit")
+plt.ylabel("Quality")
+plt.title("fruit quality")
+print(plt.show())
+# histogram charts used to understand the distribution of numerical data
+import matplotlib.pyplot as plt
+age=[18,20,21,22,25,25,27,30,31,35,40,42]
+plt.hist(age,bins=5)
+plt.xlabel("age")
+plt.ylabel("frequency")
+plt.title("Age Distribution")
+print(plt.show())
+
 
