@@ -421,6 +421,7 @@ plt.xlabel("age")
 plt.ylabel("frequency")
 plt.title("Age Distribution")
 print(plt.show())
+
 print(plt.show())
 
 
