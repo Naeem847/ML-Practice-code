@@ -419,6 +419,7 @@ age=[18,20,21,22,25,25,27,30,31,35,40,42]
 plt.hist(age,bins=5)
 plt.xlabel("age")
 plt.ylabel("frequency")
+plt.ylabel("frequency")
 plt.title("Age Distribution")
 print(plt.show())
 
