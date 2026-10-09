@@ -167,6 +167,8 @@ def desplay_result(name,marks):
 desplay_result("Ali",75)     
 
 # # working on numpy
+from ast import For
+
 import numpy as np
 arr=np.array([1,2,3,4])
 print(arr)
@@ -396,7 +398,7 @@ calc = Calculator()
 print("Addition:", calc.add(10, 5))
 print("Subtraction:", calc.subtract(10, 5))
 
-For the data 4, 8, 6, 10, let's calculate the population standard deviation.
+# For the data 4, 8, 6, 10, let's calculate the population standard deviation.
 import numpy as np
 
 data = [4, 8, 6, 10]
@@ -420,10 +422,92 @@ plt.hist(age,bins=5)
 plt.xlabel("age")
 plt.ylabel("frequency")
 plt.ylabel("frequency")
+
 plt.title("Age Distribution")
-print(plt.show())
 
 print(plt.show())
 
+print(plt.show())
 
 
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.tree import DecisionTreeClassifier, export_text, plot_tree
+
+# ============================================================
+# PART A: Study Hours + Previous Record -> Result
+# ============================================================
+
+data_a = [
+    ("Less",   "Poor", "Fail"),
+    ("Less",   "Good", "Fail"),
+    ("Medium", "Poor", "Fail"),
+    ("Medium", "Good", "Pass"),
+    ("High",   "Poor", "Pass"),
+    ("High",   "Good", "Pass"),
+    ("Less",   "Poor", "Fail"),
+    ("Medium", "Good", "Pass"),
+    ("High",   "Good", "Pass"),
+    ("Medium", "Poor", "Fail"),
+]
+
+cols_a = ["StudyHours", "PreviousRecord", "Result"]
+df_a = pd.DataFrame(data_a, columns=cols_a)
+
+print("=" * 60)
+print("PART A: STUDY HOURS / PREVIOUS RECORD -> RESULT")
+print("=" * 60)
+
+print("\nDataset A:")
+print(df_a.to_string(index=False))
+
+# Separate input features (X) and target (y)
+X_a = pd.get_dummies(
+    df_a.drop(columns="Result"), dtype=int
+)
+y_a = df_a["Result"]
+
+# Train the decision tree using entropy
+model_a = DecisionTreeClassifier(
+    criterion="entropy",
+    random_state=0
+)
+model_a.fit(X_a, y_a)
+
+# Print the text-based decision tree
+print("\nDecision Tree A:")
+print(export_text(model_a, feature_names=list(X_a.columns)))
+
+# Predict a new example
+sample_a = pd.DataFrame([
+    {"StudyHours": "High", "PreviousRecord": "Good"}
+])
+sample_a_encoded = pd.get_dummies(
+    sample_a, dtype=int
+).reindex(columns=X_a.columns, fill_value=0)
+prediction = model_a.predict(sample_a_encoded)[0]
+print("\nPrediction for Dataset A:")
+print("StudyHours = High, PreviousRecord = Good")
+print("Result =", prediction)
+# ============================================================
+# GRAPHICAL DECISION TREE USING MATPLOTLIB
+# ============================================================
+plt.figure(figsize=(12, 8))
+plot_tree(
+    model_a,
+    feature_names=list(X_a.columns),
+    class_names=list(model_a.classes_),
+    filled=True,
+    rounded=True,
+    proportion=False,
+    impurity=True,
+    fontsize=5
+)
+plt.title(
+    "Decision Tree A: Study Hours vs Result",
+    fontsize=5,
+    fontweight="bold"
+)
+plt.tight_layout()
+plt.show()
