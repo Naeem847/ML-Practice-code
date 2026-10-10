@@ -502,12 +502,85 @@ plot_tree(
     rounded=True,
     proportion=False,
     impurity=True,
-    fontsize=5
+    fontsize=10
 )
 plt.title(
     "Decision Tree A: Study Hours vs Result",
-    fontsize=5,
+    fontsize=10,
     fontweight="bold"
 )
+plt.tight_layout()
+plt.show()
+
+
+# ============================================================
+# PART B: PATIENT INFORMATION -> MEDICINE A / B
+# ============================================================
+
+
+data_b = [
+    ("Young", "M", "High",   "Normal", "A"),  # P1
+    ("Aged",  "F", "High",   "High",   "A"),  # P2
+    ("Aged",  "M", "Normal", "Normal", "B"),  # P3
+    ("Young", "M", "Normal", "High",   "B"),  # P4
+    ("Young", "M", "High",   "Normal", "B"),  # P5
+    ("Aged",  "F", "High",   "High",   "A"),  # P6
+    ("Aged",  "F", "Normal", "Normal", "B")   # P7
+]
+
+cols_b = [
+    "Age", "Gender", "BloodPressure",
+    "Cholesterol", "Medicine"
+]
+
+df_b = pd.DataFrame(data_b, columns=cols_b)
+
+print("\n" + "=" * 60)
+print("PART B: PATIENT MEDICINE PREDICTION")
+print("=" * 60)
+
+print("\nTraining Dataset B:")
+print(df_b.to_string(index=False))
+
+# Separate features and target
+X_b = pd.get_dummies(df_b.drop(columns="Medicine"), dtype=int)
+y_b = df_b["Medicine"]
+
+# Train Decision Tree
+model_b = DecisionTreeClassifier(
+    criterion="entropy",
+    random_state=0
+)
+model_b.fit(X_b, y_b)
+
+# P8: test patient
+p8 = pd.DataFrame([{
+    "Age": "Young",
+    "Gender": "M",
+    "BloodPressure": "Normal",
+    "Cholesterol": "High"
+}])
+
+p8_encoded = pd.get_dummies(
+    p8, dtype=int
+).reindex(columns=X_b.columns, fill_value=0)
+
+prediction_b = model_b.predict(p8_encoded)[0]
+
+print("\nPrediction for P8:")
+print(p8.to_string(index=False))
+print("Predicted Medicine:", prediction_b)
+
+# Display Dataset B decision tree
+plt.figure(figsize=(16, 9))
+plot_tree(
+    model_b,
+    feature_names=list(X_b.columns),
+    class_names=list(model_b.classes_),
+    filled=True,
+    rounded=True,
+    fontsize=9
+)
+plt.title("Decision Tree B: Patient Medicine")
 plt.tight_layout()
 plt.show()
