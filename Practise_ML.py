@@ -1,5 +1,6 @@
 message="learning python is fun!!"
 print(f"message: {message}")
+print(f"message: {message}")
 x=12
 y="hello world!"
 z=3.14
