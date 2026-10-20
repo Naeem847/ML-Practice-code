@@ -37,3 +37,12 @@ print(arr2[0:5,0:5])
 print("arr3")
 arr3=arr2.copy()
 print(arr3[0:5,0:5])
+
+
+
+# image and RBG chinnel
+import numpy as np
+import matplotlib.pyplot as plt
+from PIL import Image
+image=Image.open(r"C:\Users\Admin\Pictures\naeempassportpic.png")
+print(plt.imshow(image))
