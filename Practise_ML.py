@@ -585,3 +585,99 @@ plot_tree(
 plt.title("Decision Tree B: Patient Medicine")
 plt.tight_layout()
 plt.show()
+
+
+# practice how to work decision tree classifier
+
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+import matplotlib.pyplot as plt
+
+# 1. Create the dataset
+data = {
+    'outlook': [
+        'sunny', 'sunny', 'overcast', 'rainy',
+        'rainy', 'rainy', 'overcast', 'sunny',
+        'sunny', 'rainy', 'sunny', 'overcast',
+        'overcast', 'rainy'
+    ],
+    'temperature': [
+        'hot', 'hot', 'hot', 'mild',
+        'cool', 'cool', 'cool', 'mild',
+        'cool', 'mild', 'mild', 'mild',
+        'hot', 'mild'
+    ],
+    'humidity': [
+        'high', 'high', 'high', 'high',
+        'normal', 'normal', 'normal', 'high',
+        'normal', 'normal', 'normal', 'high',
+        'normal', 'high'
+    ],
+    'wind': [
+        'weak', 'strong', 'weak', 'weak',
+        'weak', 'strong', 'strong', 'weak',
+        'weak', 'weak', 'strong', 'strong',
+        'weak', 'strong'
+    ],
+    'play': [
+        'no', 'no', 'yes', 'yes',
+        'yes', 'no', 'yes', 'no',
+        'yes', 'yes', 'yes', 'yes',
+        'yes', 'no'
+    ]
+}
+
+df = pd.DataFrame(data)
+
+# 2. Display the dataset
+print("Play Tennis Dataset:")
+print(df)
+
+# 3. Separate input features and target
+X = df.drop('play', axis=1)
+y = df['play']
+
+# 4. Convert categorical data into numeric data
+X = pd.get_dummies(X, dtype=int)
+
+# 5. Create and train the Decision Tree model
+model = DecisionTreeClassifier(
+    criterion='entropy',
+    random_state=42
+)
+model.fit(X, y)
+
+# 6. Predict using a new example
+new_data = pd.DataFrame([{
+    'outlook': 'sunny',
+    'temperature': 'cool',
+    'humidity': 'high',
+    'wind': 'strong'
+}])
+
+# Apply the same encoding as the training data
+new_data = pd.get_dummies(new_data, dtype=int)
+new_data = new_data.reindex(columns=X.columns, fill_value=0)
+
+prediction = model.predict(new_data)
+
+print("\nPrediction:", prediction[0])
+
+# 7. Visualize the Decision Tree
+plt.figure(figsize=(8, 8))
+
+plot_tree(
+    model,
+    feature_names=X.columns,
+    class_names=model.classes_,
+    filled=True,
+    rounded=True
+)
+
+# print(plt.title("Play Tennis - Decision Tree"))
+print(plt.title(
+    f"Play Tennis Decision Tree | Prediction: {prediction[0].upper()}",
+    fontsize=20,
+    fontweight='bold'
+))
+print(plt.show())
